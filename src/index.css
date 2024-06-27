@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero{
+  background: url('./assets/bg-image.svg');
+  
+}
+.piedra-regular {
+  font-family: "Piedra", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.font-mont{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+}
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: lightseagreen;
+  transform-origin: 0%;
+}
+@media (max-width: 640px) {
+.scrolling-text {
+
+  overflow: hidden;
+   animation: scroll 20s linear infinite; 
+
+}
+.scroll-container{
+
+width: 100%;
+}
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-90%);
+  }
+}
