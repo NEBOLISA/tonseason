@@ -60,9 +60,9 @@ const HeroSection = () => {
           {/* <img className="" src={cat} alt="cat" /> */}
         </div>
         <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />
-        <div className="flex mt-3 items-center justify-between w-[70%] lg:flex-nowrap flex-wrap gap-4 lg:gap-0 mx-auto ">
+        <div className="flex mt-3 items-center justify-center lg:justify-between lg:w-[70%] w-[100%] lg:flex-nowrap flex-wrap gap-y-8  lg:gap-0 mx-auto ">
           <div className=" flex w-1/3 lg:w-1/2 justify-between ">
-            <div className="flex flex-col items-center justify-center gap-3 ml-[50%] -translate-x-1/2 text-center">
+            <div className="flex flex-col items-center justify-center gap-1 lg:gap-3 ml-[50%] -translate-x-1/2 text-center">
               <img src={heart} alt="heart" />
               <h3 className="text-[#FFD43B] font-bold flex items-center justify-center gap-1">
                 <CountUp end={300} duration={10} />+
@@ -72,7 +72,7 @@ const HeroSection = () => {
             <div className="h-[150px] w-[.5px] bg-gray-600 hidden lg:block"></div>
           </div>
           <div className="flex w-1/3 lg:w-1/2 justify-between">
-            <div className="flex flex-col items-center justify-center gap-3 ml-[50%] -translate-x-1/2 text-center">
+            <div className="flex flex-col items-center justify-center gap-1 lg:gap-3 ml-[50%] -translate-x-1/2 text-center">
               <img src={clock} alt="clock" />
               <h3 className="text-[#FFD43B] font-bold">
                 <CountUp end={268} duration={10} />
@@ -82,17 +82,18 @@ const HeroSection = () => {
             <div className="h-[150px] w-[.5px] bg-gray-600 hidden lg:block"></div>
           </div>
           <div className="flex w-1/3 lg:w-1/2 justify-between ">
-            <div className="flex flex-col items-center justify-center gap-3 ml-[50%] -translate-x-1/2 text-center">
+            <div className="flex flex-col items-center justify-center gap-1 lg:gap-3 ml-[50%] -translate-x-1/2 text-center">
               <img src={thumbs} alt="thumbs" />
               <h3 className="text-[#FFD43B] font-bold">
-                <CountUp end={322} duration={10} />M+
+                <CountUp end={322} duration={10} />
+                M+
               </h3>
               <h3 className="font-thin text-sm text-white">MARKET SUPPLY</h3>
             </div>
             <div className="h-[150px] w-[.5px] bg-gray-600 hidden lg:block"></div>
           </div>
           <div className="flex w-1/3 lg:w-1/2 justify-between ">
-            <div className="flex flex-col items-center justify-center gap-3 ml-[50%] -translate-x-1/2 text-center ">
+            <div className="flex flex-col items-center justify-center gap-1 lg:gap-3 ml-[50%] -translate-x-1/2 text-center ">
               <img src={tiles} alt="tiles" />
               <h3 className="text-[#FFD43B] font-bold">CONTINUED</h3>
               <h3 className="font-thin text-sm text-white ">FOR EVERYONE</h3>

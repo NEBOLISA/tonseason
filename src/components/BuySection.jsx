@@ -7,7 +7,7 @@ const BuySection = () => {
   return (
     <div className="bg-[#0797EB]   py-5 pb-24 mt-12 ">
       <div className="mx-9">
-        <h2 className="py-12 piedra-regular text-white text-5xl ">
+        <h2 className="py-12 lg:text-left text-center piedra-regular text-white text-5xl ">
           HOW TO BUY
         </h2>
         <div className="flex lg:flex-row flex-col gap-y-16 lg:justify-between gap-3  justify-center items-center w-full">

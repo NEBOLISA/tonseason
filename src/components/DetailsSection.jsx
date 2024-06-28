@@ -67,6 +67,8 @@ const DetailsSection = () => {
         p2={detailData.Aboutparagraph2}
         spanText={detailData.AboutSpanText}
         img={about}
+        headerFadeDirection={"fade-up"}
+        p1FadeDirection={"fade-up"}
       />
       <DetailCard
         header={detailData.Missionheader}
@@ -74,6 +76,8 @@ const DetailsSection = () => {
         p2={detailData.MissionP2}
         img={about}
         columnreverse
+        headerFadeDirection={"fade-up"}
+        p1FadeDirection={"fade-up"}
         gray
       />
       <DetailCard
@@ -82,6 +86,8 @@ const DetailsSection = () => {
         p2={detailData.CommunityP2}
         p3={detailData.CommunityP3}
         img={about}
+        p1FadeDirection={"fade-up"}
+        headerFadeDirection={"fade-up"}
       />
     </div>
   );

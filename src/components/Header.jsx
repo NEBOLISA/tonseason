@@ -6,7 +6,7 @@ const Header = () => {
     <div className="bg-white md:h-8 h-22 flex justify-between items-center">
       <div className="flex justify-center md:justify-between md:gap-0 overflow-hidden gap-4 items-end  md:ml-auto mx-auto w-[100%] md:w-[70%] md:mr-3 ">
         <div className="flex gap-4 items-center scroll-container ">
-          <h3 className="text-[#050B15] scrolling-text text-center md:text-sm text-[12px] text-sm font-light">
+          <h3 className="text-[#050B15] header-scroll scrolling-text text-center md:text-sm text-[12px]  font-light">
             Announcing Over 300 Holders of the TONSEASON COIN
           </h3>
           <button className="font-bold md:block hidden text-sm ">
