@@ -2,9 +2,9 @@ import insta from '../assets/instagram.svg'
 import web from '../assets/website.svg'
 import twitter from '../assets/twitter.svg'
 import youtube from '../assets/youtube.svg'
-const FooterSection = () => {
+const FooterSection = ({contactRef}) => {
   return (
-    <div className="bg-black  pt-12 pb-6  ">
+    <div ref={contactRef} className="bg-black  pt-12 pb-6  ">
       <div className="flex flex-col items-center justify-center w-[70%] mx-auto">
         <h3 className="text-white text-center mb-4">Chemisville</h3>
         <ul className="flex items-center justify-center  gap-3 mb-8 md:flex-row flex-col">
