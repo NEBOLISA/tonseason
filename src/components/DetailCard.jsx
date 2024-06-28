@@ -23,7 +23,7 @@ const DetailCard = ({
     <div className={`${gray ? "bg-gray-100" : "bg-white"} lg:mt-7 mt-14 `}>
       <div
         className={`${
-          columnreverse && "flex-row-reverse"
+          columnreverse && "lg:flex-row-reverse "
         }  flex items-center gap-8 mx-9 lg:flex-row py-4  flex-col-reverse`}
       >
         <div className={`lg:w-2/3 w-full`}>

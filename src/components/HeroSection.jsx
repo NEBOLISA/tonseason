@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 import Menu from "./Menu";
 import { useState } from "react";
 import CountUp from "react-countup";
-const HeroSection = () => {
+const HeroSection = ({scroll}) => {
     const [openMenu, setOpenMenu] = useState(false);
    
   return (
@@ -27,14 +27,34 @@ const HeroSection = () => {
           />
           {/* <img src={logo} alt="logo" /> */}
           <ul className=" md:flex  hidden items-center gap-4">
-            <li className="text-white cursor-pointer font-light">About Us</li>
+            <li
+              onClick={() => scroll("about")}
+              className="text-white cursor-pointer font-light"
+            >
+              About Us
+            </li>
             <li className="text-white cursor-pointer font-light">Tokenomics</li>
-            <li className="text-white cursor-pointer font-light">Roadmap</li>
-            <li className="text-white cursor-pointer font-light">Contact Us</li>
+            <li
+              onClick={() => scroll("roadmap")}
+              className="text-white cursor-pointer font-light"
+            >
+              Roadmap
+            </li>
+            <li
+              onClick={() => scroll("contact")}
+              className="text-white cursor-pointer font-light"
+            >
+              Contact Us
+            </li>
           </ul>
-          <button className="bg-white lg:static absolute top-8 left-1/2 -translate-x-1/2 text-[#071021] font-bold px-5 py-[3px] rounded-md">
+          <a
+            href="https://dedust.io/portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white md:static absolute top-8 left-1/2 hover:scale-105 -translate-x-1/2 text-[#071021] font-bold px-5 py-[3px] rounded-md"
+          >
             BUY $TSE
-          </button>
+          </a>
         </div>
         <GiHamburgerMenu
           className={` md:hidden block text-white h-8 w-8`}
@@ -59,7 +79,7 @@ const HeroSection = () => {
           />
           {/* <img className="" src={cat} alt="cat" /> */}
         </div>
-        <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />
+        <Menu scroll={scroll} openMenu={openMenu} setOpenMenu={setOpenMenu} />
         <div className="flex mt-3 items-center justify-center lg:justify-between lg:w-[70%] w-[100%] lg:flex-nowrap flex-wrap gap-y-8  lg:gap-0 mx-auto ">
           <div className=" flex w-1/3 lg:w-1/2 justify-between ">
             <div className="flex flex-col items-center justify-center gap-1 lg:gap-3 ml-[50%] -translate-x-1/2 text-center">
